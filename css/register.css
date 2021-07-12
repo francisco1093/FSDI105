@@ -1,0 +1,201 @@
+
+:root{
+    --menuColor: rgba(85, 0, 0, 0.938);
+    --secundaryColor: rgba(235, 183, 183, 0.5);
+}
+.bordered {
+    border: 1px solid black;
+}
+
+body{
+    --secundaryColor: rgba(235, 183, 183, 0.5);
+  margin: 0px;
+}
+
+header {
+    display: flex;
+    background-color: var(--secundaryColor);
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+
+header img{
+    width: 20%;
+    min-width: 110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    font-family: 'Pacifico';
+    text-align: center;
+    padding: .5rem;
+    font-size: 20px;
+    background-color: var(--secundaryColor);
+    color: var(--menuColor); 
+}
+
+fieldset legend{
+    font-size: 45px;
+}
+fieldset{
+    border: 5px var(--menuColor) solid;
+    
+}
+main input[type = text], input[type = password], input[type = number], #petServices, #petType, #petGender{
+    width: 20%;
+    font-size: 1rem;
+    margin: .3rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px var(--menuColor) solid;
+    text-align: center;
+}
+
+main  #petServices, #petType, #petGender{
+    width: fit-content;
+    font-size: 1rem;
+    margin: .3rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px var(--menuColor) solid;
+    text-align: center;
+}
+
+
+main input[type=button] {
+    font-family: 'pacifico';
+
+    background-color:var(--menuColor);
+    color: rgb(235, 183, 183);
+    padding: 1rem;
+    font-size: 1.5rem;
+   
+    margin-top: .5rem;
+}
+
+section{
+    background-color:var(--menuColor); 
+}
+
+#msg {
+    text-align: center;
+}
+
+#pets-count {
+    text-align: center;
+}
+
+#pets {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 1rem;
+    padding-left: 2%;
+}
+
+#pets img {
+    max-width: 50%;
+    align-content: flex-start;
+}
+
+#pets .pet-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pet {
+    text-align: center;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    display: flex;
+}
+
+.search-section{
+    margin-top: 0rem;
+}
+
+#search-container{
+    padding:20px;
+width: fit-content;
+margin-right: auto;
+margin-left: auto;
+}
+
+.table-container {
+    margin: auto;
+    width: 90%;
+}
+
+thead{
+    border: 2px solid rgb(235, 183, 183);
+}
+
+th{
+    width: fit-content;
+    border: 2px solid rgb(235, 183, 183);;
+    padding:10px;
+    color: rgb(235, 183, 183);
+
+}
+td{
+    border: 1px solid #ddd;
+    padding:2px;
+    width: fit-content;
+    text-align: center;
+    color: rgb(235, 183, 183);
+}
+.highlight{
+    background-color: rgb(255, 0, 0);
+    color:red;
+}
+.buttonDelete{
+    border: none;
+}
+
+.error {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    padding-top: 30px;
+    color: red;
+    width: 100px;
+    height: 80px;
+    font-size:20px;
+    align-content: center;
+    border-radius: 100%;
+    font-weight: 800;
+    background-color: white;
+}
+
+
+.menu {
+    background-color: var(--menuColor);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.menu a {
+    font-size: 20px;
+    font-family: 'Petit Formal Script', cursive;
+    text-decoration: none;
+    color: rgb(235, 183, 183);
+    padding: 23px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: rgba(85, 0, 0, 0.938);
+    background-color:rgb(235, 183, 183);
+    overflow: auto;
+}

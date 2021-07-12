@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Literata:wght@400;600;700&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6da635e2db.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo">
+    </header>
+    <section>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="register.html">Register</a>
+            <a href="about.html">About</a>
+        </nav>
+    </section>
+
+    <main id="main">
+        <form action="#">
+            <fieldset>
+                <legend>Pet Information</legend>
+                <p>
+                    <label for = "pet">Name:</label>
+                    <input type="text" id="petName">
+                </p>
+                <p>
+                    <label for = "age">Age:</label>
+                    <input type="number" min="0" name="petAge" id="petAge">
+                </p>
+                <p>
+                    <label for = "type">Type:</label>
+                    <select name="types" id="petType">
+                        <option value="" disabled selected> ---- Select a Type ----</option>
+                        <option value="Dog">Dog</option>
+                        <option value="Cat">Cat</option>
+                        <option value="Fish">Fish</option>
+                        <option value="Bird">Bird</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for = "breed">Breed:</label>
+                    <input type="text" name="petBreed" id="petBreed">
+                </p>
+                <p>
+                    <label for = "gender">Gender:</label>
+                    <select name="types" name="petGender" id="petGender">
+                        <option value="" disabled selected> ---- Select a gender ----</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+
+
+                </p>
+                <p>
+                    <label for = "service">Services:</label>
+                    <!-- <input type="text" name="petService" id="petService"> -->
+                    <select name="services" id="petServices">
+                        <option value="" disabled selected> ---- Select a Service ----</option>
+                        <option value="Shower">Shower</option>
+                        <option value="Hair Cut">Hair Cut</option>
+                        <option value="Full Service">Full Service</option>
+                    </select>
+                </p>
+                
+                <p>
+                    <label for = "allergy">Allergy:</label>
+                    <input type="text" name="petAllergy" id="petAllergy">
+                </p>
+                <fieldset id="childFieldset">
+                    <legend>Owner's Information</legend>
+                    <p>
+                        <label for = "ownerName">Owner's Name:</label>
+                        <input type="text" name="petOwnerName" id="petOwnerName">
+                    </p>
+                    <p>
+                        <label for = "contactPhone">Contact Phone:</label>
+                        <input type="text" name="petOwnerContactPhone" id="petOwnerContactPhone">
+                    </p>
+                </fieldset>
+            </fieldset>
+            <p>
+                <input type="button" value="Register" onclick="registerPet();">
+            </p>
+        </form>
+        
+    </main>
+
+    <section class="container search-section form-inline">
+        <div id="search-container">
+            <input class="form-control" for="search" name = "search" id = "petSearch">
+            <button class="btn btn-primary" onclick="searchPet()"><i class="fas fa-search"></i></button>
+            <p id="msg" class="error">Oops Pet Not Found</p>
+         </div>
+    </section>
+
+    <section class="container">
+        <table class="table table-container">
+            <thead>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Type</th>
+                <th>Gender</th>
+                <th>Breed</th>
+                <th>Service</th>
+                <th>Allergy</th>
+                <th>Ownwer's Name</th>
+                <th>Contact Phone</th>
+            </thead>
+            <tbody id="rowPet">
+
+            </tbody>
+        </table>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script2.js"></script>
+    <!-- <script src="js/directory.js"></script> -->
+    <!-- <script src="js/test5.js"></script> -->
+    <!-- <script src="js/register.js"></script> -->
+</body>
+</html>

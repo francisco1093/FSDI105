@@ -1,0 +1,16 @@
+
+.pet{
+    text-align: center;
+    
+}
+
+.icon{
+    width: 20%;
+}
+
+.bordered{
+    border:1px solid black;
+}
+.table-container{
+    margin-top: 5rem;
+}
